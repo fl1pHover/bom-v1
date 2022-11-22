@@ -47,7 +47,7 @@ export const categories = [
     ],
   },
   {
-    image: "/images/category/car.jpg",
+    image: "/images/Category/car.jpg",
     icon: (props) => <AiOutlineCar {...props} />,
     categoryName: "Тээврийн хэрэгсэл",
     id: "vehicle",
@@ -68,7 +68,7 @@ export const categories = [
     ],
   },
   {
-    image: "/images/category/computer.jpg",
+    image: "/images/Category/computer.jpg",
     icon: (props) => <MdComputer {...props} />,
     categoryName: "Компьютер",
     id: "computer",
@@ -85,7 +85,7 @@ export const categories = [
     ],
   },
   {
-    image: "/images/category/phone.jpg",
+    image: "/images/Category/phone.jpg",
     icon: (props) => <BsPhone {...props} />,
     categoryName: "Гар утас",
     id: "phone",
@@ -106,7 +106,7 @@ export const categories = [
     ],
   },
   {
-    image: "/images/category/electronic.jpg",
+    image: "/images/Category/electronic.jpg",
     icon: (props) => <CgSmartHomeWashMachine {...props} />,
     categoryName: "Цахилгаан бараа",
     id: "electronic",
@@ -119,7 +119,7 @@ export const categories = [
     ],
   },
   {
-    image: "/images/category/home.jpg",
+    image: "/images/Category/home.jpg",
     icon: (props) => <RiHomeSmile2Line {...props} />,
     categoryName: "Гэр ахуйн бараа",
     id: "household-items",
