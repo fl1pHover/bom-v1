@@ -45,7 +45,7 @@ const Card = ({ item }) => {
         />
       </button>
       <div className="absolute top-0 bottom-0 right-0 left-0 w-full h-full">
-        <div className="w-full h-full flex flex-col bg-gradient-to-b from-slate-700/0 via-slate-700/20 to-mainBlossom/100 px-3 py-2">
+        <div className="w-full h-full flex flex-col bg-gradient-to-b from-slate-700/0 via-slate-700/20 to-slate-900/100 px-3 py-2">
           <div className="h-[60%]">
             <div className="flex flex-row justify-between">
               <div className="bg-mainBlossom w-fit rounded-md px-2 py-1">
