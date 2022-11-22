@@ -14,19 +14,19 @@ export const categories = [
     submenu: [
       {
         category: "Орон сууц",
-        href: "/apartment",
+        href: "apartment",
       },
       {
         category: "Газар",
-        href: "/land",
+        href: "land",
       },
       {
         category: "Хашаа байшин",
-        href: "/fenceHouse",
+        href: "fenceHouse",
       },
       {
         category: "Худалдаа, үйлчилгээний талбай",
-        href: "/department",
+        href: "department",
       },
       {
         category: "АОС, хаус, зуслан",

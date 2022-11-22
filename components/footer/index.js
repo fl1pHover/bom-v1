@@ -8,8 +8,8 @@ import Bottom from "@/components/footer/bottom";
 import { useBreakpoints } from "@/hooks/index";
 
 const Footer = () => {
-  const pt = useBreakpoints();
-  console.log("pt", pt);
+  // const pt = useBreakpoints();
+  // console.log("pt", pt);
   return (
     <section className="bg-white">
       <ContainerX>

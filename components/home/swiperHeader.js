@@ -33,8 +33,9 @@ const SwiperHeader = () => {
           return (
             <SwiperSlide key={index} className="relative">
               <Link href={`product/${props.href}`}>
-                <div className="cursor-pointer">
+                <div className="cursor-pointer relative w-full h-full">
                   <Image
+                    priority
                     src={props.image}
                     layout="fill"
                     objectFit="cover"

@@ -18,13 +18,7 @@ const AdContent = ({ data, tlc, title = "Үл хөдлөх хөрөнгө" }) =>
       <div className="md:mb-8 mb-4 md:mt-6 mt-3">
         <SectionTitle>{title}</SectionTitle>
       </div>
-      <div
-        className="grid xl:grid-cols-5 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-3 grid-cols-2 gap-5"
-        templateColumns="repeat(auto-fill, minmax(230px, 1fr))"
-        rowGap={5}
-        gap={5}
-        py={5}
-      >
+      <div className="grid xl:grid-cols-5 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-3 grid-cols-2 gap-5">
         {/* <ProductCard data={data} tlc={tlc} /> */}
         {data && data.map((item, key) => <Card key={key} item={item || {}} />)}
         {/* <ProductCard /> */}

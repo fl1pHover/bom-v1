@@ -34,16 +34,18 @@ const calcValue = (props, checker = "байхгүй", suffix) => {
 const Card = ({ item }) => {
   const toast = useToast();
   return (
-    <button className="md:min-h-[40vh] min-h-[30vh] h-full w-full relative bg-red-300  rounded-md overflow-hidden group shadow-md">
-      <Image
-        src={item?.image ?? "/images/HeaderSlider/1.jpg"}
-        alt="product image"
-        layout="fill"
-        objectFit="cover"
-        className="group-hover:scale-125 transition-all ease-in-out duration-400 aspect-[4/5]"
-      />
+    <div className="relative bg-red-300 rounded-md overflow-hidden group shadow-md">
+      <button className="md:min-h-[40vh] min-h-[30vh] h-full w-full relative">
+        <Image
+          src={item?.image ?? "/images/HeaderSlider/1.jpg"}
+          alt="product image"
+          layout="fill"
+          objectFit="cover"
+          className="group-hover:scale-125 transition-all ease-in-out duration-400 aspect-[4/5]"
+        />
+      </button>
       <div className="absolute top-0 bottom-0 right-0 left-0 w-full h-full">
-        <div className="w-full h-full flex flex-col bg-gradient-to-b from-slate-900/0 to-mainBlossom/60 px-3 py-2">
+        <div className="w-full h-full flex flex-col bg-gradient-to-b from-slate-700/0 via-slate-700/20 to-mainBlossom/100 px-3 py-2">
           <div className="h-[60%]">
             <div className="flex flex-row justify-between">
               <div className="bg-mainBlossom w-fit rounded-md px-2 py-1">
@@ -126,7 +128,7 @@ const Card = ({ item }) => {
           </div>
         </div>
       </div>
-    </button>
+    </div>
   );
 };
 

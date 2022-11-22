@@ -39,7 +39,7 @@ const CategorySelect = () => {
         <div className="grid md:grid-cols-6 grid-cols-3 xl:gap-10 sm:gap-5 gap-3">
           {categories.map(({ ...props }, index) => {
             return (
-              <>
+              <div key={index}>
                 {/* Categoryiin default menug ni hamgiin ehnii submenu eer avna */}
                 {props.submenu &&
                   props.submenu.slice(0, 1).map((sub, i) => {
@@ -90,7 +90,7 @@ const CategorySelect = () => {
                       </Link>
                     );
                   })}
-              </>
+              </div>
             );
           })}
         </div>
