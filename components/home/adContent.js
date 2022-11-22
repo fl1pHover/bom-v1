@@ -4,35 +4,37 @@ import { Grid, Heading, Skeleton } from "@chakra-ui/react";
 
 import MainContainer from "../../layout/mainContainer";
 
-import ProductCard from "../../util/productCard";
+import ProductCard from "./productCard";
+import { ContainerX, ContainerXP } from "@/lib/Container";
+import { SectionTitle } from "@/lib/Title";
+import Card from "./card";
 
 // const Asd = <ProductCard />;
 // const array = [...Array(10)];
 
 const AdContent = ({ data, tlc, title = "Үл хөдлөх хөрөнгө" }) => {
   return (
-    <MainContainer>
-      <div className="pb-2 mt-8">
-        <Heading>{title}</Heading>
+    <ContainerXP classname="md:py-8 py-0">
+      <div className="md:mb-8 mb-4 md:mt-6 mt-3">
+        <SectionTitle>{title}</SectionTitle>
       </div>
-      <Grid
+      <div
+        className="grid xl:grid-cols-5 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-3 grid-cols-2 gap-5"
         templateColumns="repeat(auto-fill, minmax(230px, 1fr))"
         rowGap={5}
         gap={5}
         py={5}
       >
-        {/* {array.map((_, index) => {
-                         <GridItem key={index}>{Asd}</GridItem>;
-                    })} */}
-        <ProductCard data={data} tlc={tlc} />
+        {/* <ProductCard data={data} tlc={tlc} /> */}
+        {data && data.map((item, key) => <Card key={key} item={item || {}} />)}
         {/* <ProductCard /> */}
         {/* <ProductCard /> */}
-        {/* <Skeleton />
         <Skeleton />
         <Skeleton />
-        <Skeleton /> */}
-      </Grid>
-    </MainContainer>
+        <Skeleton />
+        <Skeleton />
+      </div>
+    </ContainerXP>
   );
 };
 

@@ -63,9 +63,9 @@ const CategorySelect = () => {
                             <div
                               className={mergeNames(
                                 "absolute w-full h-full top-0 bottom-0 right-0 left-0",
-                                "bg-gradient-to-b from-gray-900/40 to-mainBlossom/60",
+                                "bg-gradient-to-b from-gray-900/50 to-mainBlossom/70",
                                 "transition-all ease-in-out duration-500",
-                                "group-hover:from-gray-900/20 group-hover:to-mainBlossom/30"
+                                "group-hover:from-gray-900/30 group-hover:to-mainBlossom/50"
                               )}
                             >
                               <div className="flex flex-col justify-center items-center h-full w-full gap-2">

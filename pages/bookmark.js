@@ -1,7 +1,7 @@
 import { Box, Grid, Heading, Select, Stack } from "@chakra-ui/react";
 import React from "react";
 import MainContainer from "../layout/mainContainer";
-import ProductCard from "../util/productCard";
+import ProductCard from "../components/home/productCard";
 
 const Bookmark = () => {
      return (

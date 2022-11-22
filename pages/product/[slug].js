@@ -19,7 +19,7 @@ import React, { useEffect, useState } from "react";
 import { FaHeart } from "react-icons/fa";
 import FilterLayout from "../../components/filter";
 import MainContainer from "../../layout/mainContainer";
-import ProductCard from "../../util/productCard";
+import ProductCard from "../../components/home/productCard";
 import ECalculator from "../calculator";
 
 import ScrollTop from "@/lib/ScrollTop";

@@ -42,7 +42,7 @@ const SwiperHeader = () => {
                   />
                   <div className="absolute top-0 bottom-0 right-0 left-0 w-full h-full bg-slate-900/30">
                     <div className="flex flex-col justify-center items-center h-full w-full">
-                      <p className="text-white md:text-6xl text-4xl font-semibold">
+                      <p className="text-white md:text-6xl text-4xl font-extrabold">
                         Онцгой зар
                       </p>
                     </div>
