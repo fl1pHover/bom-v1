@@ -1,50 +1,25 @@
 import React from "react";
-// import swiper
-import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
+import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-
-// import required modules
-import { Box, Link } from "@chakra-ui/react";
 import { Autoplay, Navigation, Pagination } from "swiper";
 
 import Image from "next/image";
+import Link from "next/link";
 
-const headerImageData = [
-  {
-    image: "/images/HeaderSlider/1.jpg",
-    href: "/1",
-  },
-  {
-    image: "/images/HeaderSlider/2.jpg",
-    href: "/1",
-  },
-  {
-    image: "/images/HeaderSlider/1.jpg",
-    href: "/1",
-  },
-  {
-    image: "/images/HeaderSlider/2.jpg",
-    href: "/1",
-  },
-];
+import headerImageData from "@/data/headerImages";
 
 const SwiperHeader = () => {
   return (
-    <div
-      height="60vh"
-      // Padding hiivel
-      // padding={"5px"}
-      className="h-[60vh]"
-    >
+    <div className="h-[60vh] ">
       <Swiper
         spaceBetween={0}
         centeredSlides={true}
         autoplay={{
-          delay: 2000,
+          delay: 3000,
           disableOnInteraction: false,
         }}
         pagination={{
@@ -57,23 +32,23 @@ const SwiperHeader = () => {
         {headerImageData.map(({ ...props }, index) => {
           return (
             <SwiperSlide key={index} className="relative">
-              <div>
-                {/* <Link href={props.href}> */}
-                {/* </Link> */}
-                <Image
-                  src={props.image}
-                  layout="fill"
-                  objectFit="cover"
-                  alt="swiper image"
-                />
-                <div className="absolute top-0 bottom-0 right-0 left-0 w-full h-full bg-slate-900/30">
-                  <div className="flex flex-col justify-center items-center h-full w-full">
-                    <p className="text-white md:text-6xl text-4xl font-semibold">
-                      Онцгой зар
-                    </p>
+              <Link href={`product/${props.href}`}>
+                <div className="cursor-pointer">
+                  <Image
+                    src={props.image}
+                    layout="fill"
+                    objectFit="cover"
+                    alt="swiper image"
+                  />
+                  <div className="absolute top-0 bottom-0 right-0 left-0 w-full h-full bg-slate-900/30">
+                    <div className="flex flex-col justify-center items-center h-full w-full">
+                      <p className="text-white md:text-6xl text-4xl font-semibold">
+                        Онцгой зар
+                      </p>
+                    </div>
                   </div>
                 </div>
-              </div>
+              </Link>
             </SwiperSlide>
           );
         })}

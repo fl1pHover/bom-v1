@@ -8,7 +8,7 @@ export const categories = [
   {
     image: "/images/HeaderSlider/1.jpg",
     categoryName: "Үл хөдлөх хөрөнгө",
-    icon: <BsBuilding />,
+    icon: (props) => <BsBuilding {...props} />,
     id: "realState",
     itemCount: "105",
     submenu: [
@@ -48,7 +48,7 @@ export const categories = [
   },
   {
     image: "/images/category/car.jpg",
-    icon: <AiOutlineCar />,
+    icon: (props) => <AiOutlineCar {...props} />,
     categoryName: "Тээврийн хэрэгсэл",
     id: "vehicle",
     itemCount: "105",
@@ -69,7 +69,7 @@ export const categories = [
   },
   {
     image: "/images/category/computer.jpg",
-    icon: <MdComputer />,
+    icon: (props) => <MdComputer {...props} />,
     categoryName: "Компьютер",
     id: "computer",
     itemCount: "105",
@@ -86,7 +86,7 @@ export const categories = [
   },
   {
     image: "/images/category/phone.jpg",
-    icon: <BsPhone />,
+    icon: (props) => <BsPhone {...props} />,
     categoryName: "Гар утас",
     id: "phone",
     itemCount: "105",
@@ -107,7 +107,7 @@ export const categories = [
   },
   {
     image: "/images/category/electronic.jpg",
-    icon: <CgSmartHomeWashMachine />,
+    icon: (props) => <CgSmartHomeWashMachine {...props} />,
     categoryName: "Цахилгаан бараа",
     id: "electronic",
     itemCount: "105",
@@ -120,7 +120,7 @@ export const categories = [
   },
   {
     image: "/images/category/home.jpg",
-    icon: <RiHomeSmile2Line />,
+    icon: (props) => <RiHomeSmile2Line {...props} />,
     categoryName: "Гэр ахуйн бараа",
     id: "household-items",
     itemCount: "105",
