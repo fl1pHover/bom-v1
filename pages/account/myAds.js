@@ -28,9 +28,8 @@ const MyAds = () => {
 
      return (
           <TabPanel>
-               <Heading variant={"mediumHeading"}>
-                    <AdContent data={products} tlc={toLowerCase} title=" " />
-               </Heading>
+               <Heading variant={"mediumHeading"}>Миний зарууд</Heading>
+               <AdContent data={products} tlc={toLowerCase} title=" " />
           </TabPanel>
      );
 };
